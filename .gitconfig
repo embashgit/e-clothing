@@ -1,0 +1,10 @@
+[user]
+    name = Ibrahim M Bashir
+    email = ibrahimembash@gmail.com
+[credential]
+username = embashgit
+helper = osxkeychain
+# Please adapt and uncomment the following lines:
+#	name = Ibrahim Bashir
+#	email = ibrahimbashir@IBASHIR-PC.local
+

@@ -11,7 +11,7 @@ export interface AppsProps {
 export default function App(props: AppsProps) {
   return (
     <div>
-      <h2>Counter hello</h2>
+      <h2>Counter Working Well</h2>
       <img src={setup} alt="" />
       <ClickCounter />
     </div>
