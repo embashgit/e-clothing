@@ -1,11 +1,12 @@
-const webpack = require('webpack');
+const webpack = require("webpack");
 
 module.exports = {
-  mode: 'production',
+  mode: "production",
+  devtool: "source-map",
   plugins: [
     new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify('qa'),
+      "process.env": {
+        NODE_ENV: JSON.stringify("qa"),
       },
     }),
     new webpack.optimize.AggressiveMergingPlugin(),
