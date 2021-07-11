@@ -8,11 +8,11 @@
     "dev": "webpack serve  --config webpack/webpack.config.js --env env=dev",
     "build:qa": " webpack --config webpack/webpack.config.js --env env=qa",
     "build:dev": "NODE_ENV=developmentserver webpack --config webpack/webpack.config.js --env env=developmentserver",
-    "lint": "eslint --fix \"./src/**.{js,jsx,ts,tsx,json}\"",
+    "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
     "prestart": "npm run build",
     "start": "node .",
     "test": "jest --coverage",
-    "format": "prettier  --write \"./src/**.{js,jsx,ts,tsx,json,css,scss,md}\""
+    "format": "prettier  --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
   },
   "repository": {
     "type": "git",
@@ -89,6 +89,7 @@
     "ts-loader": "^9.2.3",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^5.44.0",
+    "webpack-bundle-analyzer": "^4.4.2",
     "webpack-cli": "^4.7.2",
     "webpack-merge": "^5.8.0"
   },
@@ -119,5 +120,18 @@
     "typescript": "^4.3.5",
     "webpack-dev-server": "^3.11.2",
     "xlsx": "^0.16.6"
+  },
+  "lint-staged": {
+    "/src/**/*.{js,jsx,ts,tsx,json}": [
+      "eslint: --fix"
+    ],
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier: --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

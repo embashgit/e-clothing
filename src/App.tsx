@@ -9,7 +9,6 @@ export interface AppsProps {
 }
 
 export default function App(props: AppsProps) {
-  const sap = 'Asalo'
   return (
     <div>
       <h2>Counter hello</h2>

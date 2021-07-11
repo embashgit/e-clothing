@@ -63,4 +63,4 @@ License - see the [LICENSE.md](LICENSE.md) file for
 details
 ​
 ## Acknowledgments
-- Kehinde Odewole (UX)
+- Kehinde Odewole (UX Designer)
