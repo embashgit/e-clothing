@@ -5,6 +5,7 @@ module.exports = {
   devtool: "inline-source-map",
   devServer: {
     hot: true,
+    open: true,
   },
   plugins: [
     new DefinePlugin({
